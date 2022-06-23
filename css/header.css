@@ -1,0 +1,36 @@
+.header {
+  max-width: 1200px; /*conteúdo do site fica mais concentrado (para de crescer), não fica expandindo (principalmente em uma tela maior)*/
+  padding: 40px 20px; /*melhor que a margin para desgrudar o elemento da tela, pois irá pegar o elemento todo. C/a margin irá ter espaços em branco */
+  margin: 0 auto; /*alinhar o conteúdo ao centro um item de bloco que tem tamanho máximo, nesse caso 1200px*/
+  display: flex;
+  justify-content: space-between; /*espaçar a marca do menu, um para cada lado*/
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap; /*caso diminua o tamanho da tela, p/ quebrar o menu para a próxima linha*/
+  gap: 10px;
+  justify-content: center;
+}
+
+.header-menu a {
+  font-size: 1.125rem; /*1rem=16px*/
+  line-height: 1.3;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #141414;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  .header a {
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+}

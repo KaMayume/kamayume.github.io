@@ -1,0 +1,43 @@
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+  margin: 0px;
+  color: #141414;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  /*quando definimos o height e width no html a imagem esmagou porque agora está utilizando os tamanhos que colocamos. Para solucionar, basta colocar height:auto (irá definir automaticamente de acordo com o valor da largura, irá manter a razão da imagem*/
+  display: block;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 5ch;
+  /*ch=caractere 0, quando a letra estiver bem espaçada, irá quebrar a letra a partir do 5° caractere*/
+}
+
+@media (max-width: 800px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+    /*para resolver o problema do responsivo com o elemento h2 Formação, pois quando chega no responsivo a palavra está mantendo o 5ch que colocamos no formacao.css na classe .formacao .subtitulo e no global colocamos que o max-width: initial*/
+  }
+}

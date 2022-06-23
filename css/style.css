@@ -1,0 +1,8 @@
+/*para linkar outro arquivo css e importar todo o código*/
+
+@import "./global.css";
+@import "./header.css";
+@import "./introducao.css";
+@import "./experiencia.css";
+@import "./formacao.css";
+@import "./footer.css";
