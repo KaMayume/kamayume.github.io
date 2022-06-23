@@ -118,4 +118,6 @@ Otimizou o css e tirou todos os espaços extras*/
 
 /*Lembrar que após criar o style.min.css para realizar qualquer mudanças nos outros css será necessário realizar novamente o comando cleancss -o style.min.css style.css*/
 
-/*comando git init para iniciar repositório no GitHub. git add para adicionar o arquivo*/
+/*comando git init para iniciar repositório no GitHub. git add para adicionar o arquivo. git add -A: adiciona todos os arquivos*/
+/*git config --global core.autocrlf false p/ não aparecer mais a mensagem de alerta de CRLF*/
+/*git commit -m "commit inicial"*/
